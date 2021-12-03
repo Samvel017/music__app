@@ -69,6 +69,72 @@ body {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.far:hover {
+  color: #77c66e;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.sort-hide {
+  display: none !important;
+}
+
+.song-block-name {
+  background-color: #333333;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.song-block-length {
+  background-color: #333333;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.song-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 15px;
+  margin-bottom: 25px;
+}
+
+.song-buttons button {
+  cursor: pointer;
+  padding: 3px 10px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  border-bottom: 2px solid #fff;
+}
+
+.song-buttons button:hover {
+  color: #77c66e;
+  border-bottom: 2px solid #77c66e;
+}
+
+.song-buttons .sortName.active {
+  color: #77c66e;
+  border-bottom: 2px solid #77c66e;
+}
+
+.song-buttons .sortLength.active {
+  color: #77c66e;
+  border-bottom: 2px solid #77c66e;
 }
 
 @media screen and (max-width: 1162px) {
@@ -76,6 +142,23 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .main-title {
+    text-align: center;
+  }
+  .song-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-section h2 {
+    text-align: center;
+  }
+  .backBut, .backButInner {
+    padding-left: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
